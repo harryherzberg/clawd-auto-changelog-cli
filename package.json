@@ -1,13 +1,16 @@
 {
   "name": "auto-changelog-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Generate changelogs from conventional git commits",
+  "main": "cli.js",
+  "bin": {
+    "auto-changelog": "./cli.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "scripts": {
+    "start": "node cli.js",
+    "pack": "npm pack"
+  },
+  "keywords": ["changelog", "conventional-commits", "git", "cli"],
+  "author": "Clawdbot",
+  "license": "MIT"
 }
